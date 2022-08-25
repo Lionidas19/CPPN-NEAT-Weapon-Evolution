@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Shooter
+  - Blue
+  - Red
+  - BlueBullet
+  - RedBullet1
+  - RedBullet2
+  - RedBullet3
+  - RedBullet4
+  - Obstacle
+  - Target
+  - Border
+  - FireBullet
+  - WaterBullet
+  - WindBullet
+  - GroundBullet
+  - IntermediateTarget
+  - Weapon
+  - IntermediateBorder
+  - OOB
+  - Bounds
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Object
+  - Mask
+  - BehindMask
+  - Black
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

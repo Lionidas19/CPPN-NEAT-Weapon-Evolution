@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/BulletStats.unity
+    guid: cd1d782fb3f8df14d8ebfffb6ca5f4da
+  - enabled: 1
+    path: Assets/Scenes/CPPN.unity
+    guid: e3948d1c3dac4134e874c74f765ed0ef
+  - enabled: 1
+    path: Assets/Scenes/Movement Test.unity
+    guid: efdcbc788584ba344b626ce6ff6236b8
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  m_configObjects: {}
