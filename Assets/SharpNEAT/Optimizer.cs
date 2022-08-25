@@ -41,8 +41,11 @@ public class Optimizer : MonoBehaviour {
     static NeatEvolutionAlgorithm<NeatGenome> _ea;
 
     [Header("The subject of the experiments")]
+    [Tooltip("The subject for evolution that will start this process if the Start EA button is pressed")]
     public GameObject Unit;
+    [Tooltip("The already evolved unit that will be simulated that will start if the Run Best button is pressed")]
     public GameObject RunBestUnit;
+    [Tooltip("The spawn point from which the projectiles will be shot")]
     public GameObject spawn;
     public int NumberOfSimulations;
 
@@ -109,7 +112,8 @@ public class Optimizer : MonoBehaviour {
 
         experiment.Initialize("Bullets", xmlConfig.DocumentElement, NUM_INPUTS, NUM_OUTPUTS);
 
-        if (!TestBeds[previousActiveLevel].active) TestBeds[previousActiveLevel].SetActive(true);
+        if(TestBeds.Count != 0)
+            if (!TestBeds[previousActiveLevel].active) TestBeds[previousActiveLevel].SetActive(true);
 
         populationSize = experiment.DefaultPopulationSize;
 
@@ -193,10 +197,9 @@ public class Optimizer : MonoBehaviour {
             }
         }
 
-        if (Generation >= StoppingGeneration * TestBeds.Count)
-        {
-            StopEA();
-        }
+        var testBedCount = TestBeds.Count > 0 ? TestBeds.Count : 1;
+
+        if (Generation >= StoppingGeneration * testBedCount) StopEA();
 
         int ActiveLevel = (int)Generation / StoppingGeneration;
 
